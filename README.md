@@ -7,7 +7,7 @@ RESTful API using Laravel 5.7 with JWT Auth and SPA using Vue.js with Vuex, Vue-
 2. Run `npm run i` to install all node.js depedencies
 3. Run `npm run dev` to compile all assets
 4. Run `php artisan migrate` (assuming you already change the database informations in the .env file) to create tables
-5. Run `php artisan tinker` then inside tinker Run `factory('App\User', 50)->create(['email', 'your@shortest.email']);` which will have **secret** as a default password then `factory('App\Customer', 50)->create();` to create dummies the will be displayed in the table
+5. Run `php artisan tinker` then inside tinker Run `factory('App\User', 50)->create(['email', 'your@shortest.email']);` which will have **secret** as a default password then `factory('App\Customer', 50)->create();` to create dummies that will be displayed in the table
 
 *if you want more customize user creation, then run `mysql -u username - p` then manually insert data into the users table.*
 
