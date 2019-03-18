@@ -43,14 +43,14 @@
         name: 'app-header',
         methods: {
             logout() {
-                this.$store.commit("LOGOUT");
-                this.$router.push("/login");
+                this.$store.commit("LOGOUT")
+                this.$router.push("/login")
             }
         },
         computed: {
             currentUser() {
-                console.log(this.$store.getters.currentUser);
-                return this.$store.getters.currentUser;
+                console.log(this.$store.getters.currentUser)
+                return this.$store.getters.currentUser
             }
         }
     }

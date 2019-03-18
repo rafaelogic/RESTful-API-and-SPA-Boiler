@@ -39,7 +39,7 @@
         name: 'list',
         created() {
             if (!this.customers.length) {
-                this.$store.dispatch('FETCH_ALL');
+                this.$store.dispatch('FETCH_ALL')
             }
         },
 

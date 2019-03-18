@@ -3,19 +3,19 @@ export function login(credentials) {
         axios
             .post("/api/auth/login", credentials)
             .then(response => {
-                res(response.data);
+                res(response.data)
             })
             .catch(err => {
-                rej("Wrong email or password");
-            });
-    });
+                rej("Wrong email or password")
+            })
+    })
 }
 
 export function getLocalUser() {
-    const userStr = localStorage.getItem("user");
+    const userStr = localStorage.getItem("user")
 
     if (!userStr) {
-        return null;
+        return null
     }
-    return JSON.parse(userStr);
+    return JSON.parse(userStr)
 }

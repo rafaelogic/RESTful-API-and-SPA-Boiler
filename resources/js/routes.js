@@ -1,11 +1,11 @@
-import Login from "./components/auth/Login.vue";
+import Login from "./components/auth/Login.vue"
 
-import Home from "./components/Home.vue";
+import Home from "./components/Home.vue"
 
-import Customer from "./components/customers/View.vue";
-import CustomersMain from "./components/customers/Main.vue";
-import CustomersList from "./components/customers/List.vue";
-import NewCustomer from "./components/customers/New.vue";
+import Customer from "./components/customers/View.vue"
+import CustomersMain from "./components/customers/Main.vue"
+import CustomersList from "./components/customers/List.vue"
+import NewCustomer from "./components/customers/New.vue"
 
 export const routes = [
     {
@@ -37,4 +37,4 @@ export const routes = [
             }
         ]
     }
-];
+]

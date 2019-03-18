@@ -37,10 +37,10 @@
     export default {
         name: 'view',
         created() {
-            var customer_id = this.$route.params.id;
+            var customer_id = this.$route.params.id
 
             if (this.customers.length) {
-                var customer = this.customers.find((customer) => customer.id ==  customer_id);
+                var customer = this.customers.find((customer) => customer.id ==  customer_id)
                 this.$store.commit('UPDATE_CUSTOMER', customer)
             } else {
                 this.$store.dispatch('FETCH', customer_id)

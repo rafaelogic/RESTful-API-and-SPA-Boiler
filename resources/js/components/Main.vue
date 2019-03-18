@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import Header from './Header.vue';
+    import Header from './Header.vue'
 
     export default {
         name: 'main-app',

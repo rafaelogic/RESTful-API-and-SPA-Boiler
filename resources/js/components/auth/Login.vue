@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  import {login} from '../../helpers/auth';
+  import {login} from '../../helpers/auth'
 
   export default {
     name: "login",
@@ -43,27 +43,27 @@
           password: ''
         },
         error: null
-      };
+      }
     },
 
     methods: {
       authenticate() {
-        this.$store.dispatch('DO_LOGIN');
+        this.$store.dispatch('DO_LOGIN')
 
         login(this.$data.form)
           .then((res) => {
-            this.$store.commit("LOGIN_SUCCESS", res);
-            this.$router.push({path: '/'});
+            this.$store.commit("LOGIN_SUCCESS", res)
+            this.$router.push({path: '/'})
           })
           .catch((error) => {
-            this.$store.commit('LOGIN_FAILED', {error});
+            this.$store.commit('LOGIN_FAILED', {error})
           })
       }
     },
 
     computed: {
       authError() {
-        return this.$store.getters.authError;
+        return this.$store.getters.authError
       }
     }
 
